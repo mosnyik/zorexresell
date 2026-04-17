@@ -2,6 +2,7 @@ import { Image } from "expo-image";
 import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import colors from "@/config/colors";
 
 function WelcomeScreen() {
   return (
@@ -52,12 +53,12 @@ const styles = StyleSheet.create({
     width: 120,
   },
   signup: {
-    backgroundColor: "#fc5c65",
+    backgroundColor: colors.primary,
     height: 50,
     width: "100%",
   },
   signin: {
-    backgroundColor: "#4ecdc4",
+    backgroundColor: colors.secondary,
     height: 50,
     width: "100%",
   },
