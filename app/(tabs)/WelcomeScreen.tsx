@@ -3,8 +3,11 @@ import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import colors from "@/config/colors";
+import CustomButton from "@/components/CustomButton";
 
 function WelcomeScreen() {
+  const primaryColor = colors.primary;
+  const secondaryColor = colors.secondary;
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -22,8 +25,10 @@ function WelcomeScreen() {
         </View>
 
         <View style={styles.bottomContainer}>
-          <View style={styles.signup}></View>
-          <View style={styles.signin}></View>
+          {/* <View style={styles.signup}></View> */}
+          <CustomButton title="Login" bg={primaryColor }/>
+          <CustomButton title="Register" bg={secondaryColor} />
+          {/* <View style={styles.signin}></View> */}
         </View>
       </ImageBackground>
     </SafeAreaView>
