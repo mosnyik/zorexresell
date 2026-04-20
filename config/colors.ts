@@ -5,5 +5,6 @@ export default {
   white: "#fff",
   gray: "#e8e8e8",
   light: "#f8f8f8",
+  cardBg: "#f8f4f4",
   dark: "#444",
 };

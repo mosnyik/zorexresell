@@ -1,9 +1,14 @@
-import CustomButton from "@/components/CustomButton";
-import ViewImageScreen from "./ViewImageScreen";
-import WelcomeScreen from "./WelcomeScreen";
+import Card from "@/components/Card";
 
 export default function HomeScreen() {
-  return <WelcomeScreen />;
+  return (
+    <Card
+      title="Red Jacket for Sale!"
+      subtitle="$100"
+      imageUrl={require("../../assets/jacket.jpg")}
+    />
+  );
+  // return <WelcomeScreen />;
   // return <ViewImageScreen />;
   // return <CustomButton />;
 }
