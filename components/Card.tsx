@@ -8,7 +8,7 @@ import {
   View,
 } from "react-native";
 
-interface CardProps {
+export interface CardProps {
   title: string;
   subtitle: string;
   imageUrl: ImageSourcePropType;

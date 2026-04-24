@@ -1,8 +1,9 @@
-import Card from "@/components/Card";
+import ListingDetailsScreen from "@/components/ListingDetailsScreen";
+import { View } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <Card
+    <ListingDetailsScreen
       title="Red Jacket for Sale!"
       subtitle="$100"
       imageUrl={require("../../assets/jacket.jpg")}
